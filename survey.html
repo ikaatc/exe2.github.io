@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>DOM Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Survey NCT Dream</h3>
+        </div>
+
+        <form action="">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="Nama anda" id="nama"><br>
+
+            <label for="tanggal">Tanggal Lahir Anda</label><br>
+            <input class="date" type="date" name="tanggal" id="tanggal"><br><br>
+
+            <label for="album">Album Yang Paling Disukai</label><br>
+            <select name="album" id="album">
+                <option value="wegoup">We Go Up</option>
+                <option value="We Young">We Young</option>
+                <option value="Beatbox">Beatbox</option>
+                <option value="Reload">Reload</option>
+                <option value="We Boom">We Boom</option>
+                <option value="The Dream">The Dream</option>
+                <option value="Candy">Candy</option>
+                <option value="Hello Future">Hello Future</option>
+                <option value="Glitch Mode">Glitch Mode</option>
+                <option value="Hot Sauce">Hot Sauce</option>
+            </select><br><br>
+
+            <div class="box">
+                <p>Bias di NCT Dream:</p>
+                <input type="radio" name="peminatan" id="jaemin" value="jaemin">
+                <label for="programming">Jaemin</label> <br>
+                <input type="radio" name="peminatan" id="mark" value="mark">
+                <label for="programming">Mark</label> <br>
+                <input type="radio" name="peminatan" id="haechan" value="haechan">
+                <label for="programming">Haechan</label><br>
+                <input type="radio" name="peminatan" id="renjun" value="renjun">
+                <label for="programming">Renjun</label><br>
+                <input type="radio" name="peminatan" id="jeno" value="jeno">
+                <label for="programming">Jeno</label><br>
+                <input type="radio" name="peminatan" id="chenle" value="chenle">
+                <label for="programming">Chenle</label><br>
+                <input type="radio" name="peminatan" id="jisung" value="jisung">
+                <label for="programming">Jisung</label><br>
+            </div>
+
+            <label for="">Alasan Kenapa Suka NCT Dream</label><br>
+            <textarea placeholder="Tulis alasan mu disini" name="alasan" id="alasan" cols="30"
+                rows="3"></textarea><br><br>
+
+            <label for="">Alasan Kenapa Suka Dengan Album Yang Sudah DIpilih</label><br>
+            <textarea placeholder="Tulis alasan mu disini" name="suka" id="suka" cols="30" rows="3"></textarea><br><br>
+
+            <button type="submit" onclick="kirimData()">Kirim</button>
+        </form>
+    </div>
+
+    <script src="survey.js"></script>
+</body>
+
+</html>
